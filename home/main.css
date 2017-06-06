@@ -1,13 +1,108 @@
+/*text: #0B1942
+inline link: #00B7D3
+h2 background: #0B1942
+h2 color: #FFFFFF
+logo background: #F5005B
+navigation background: #7DDFE8
+navigation link color: #FFFFFF
+"Home" nav link background: #00A5BF
+"Calendar" nav link background: #00B7D3
+"Join" nav link background: #00D5E7
+"Up Next" background: #0B1942
+"Up Next" card background #E2E2E2
+calendar background and treatments: #0B1942
+calendar highlighted day: #F5005B
+button background: #F5005B
+copyright text: #FFFFFF
+
+colors-------------------------------*/
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 * {
   margin: 0;
   padding: 0;
   border: 0;
   outline: 0;
   font-size: 100%;
+  vertical-align: baseline;
   background: transparent;
-  /*box-sizing: border-box;*/
 }
 
+html {
+  width: 100vw;
+  min-height: 100vh;
+}
+/*----------------------------------------------------*/
+
+.body-wrap {
+   width: 100vw;
+   height: inherit;
+   font-family: 'PT Sans', sans-serif;
+   font-weight: lighter;
+   font-size: 100%;
+}
+
+header {
+   position: relative;
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+   background-color: #F5005B;
+}
+
+#logo {
+   /*box-sizing: content-box;*/
+   flex-grow: 1;
+   /*width: 140px;*/
+   border: solid 15px #F5005B;
+   background-image: url("../images/filmclub.png");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   text-align: center;
+
+}
+
+nav{
+   flex-grow: 3;
+   /*max-height: 20vh;*/
+   background-color: #7DDFE8;
+}
+
+nav a{
+   padding: 1em;
+   color: #FFFFFF;
+   text-decoration: none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#home {
+   background-color: #00A5BF;
+}
+
+#calendar {
+   background-color: #00B7D3;
+}
+
+#join {
+   background-color: #00D5E7;
+}
+
+
+footer{
+   background-color: #7DDFE8;
+
+}
+
+footer span{
+   color: #FFFFFF;
+
+}
 
 
 /*MOBILE___________________________
