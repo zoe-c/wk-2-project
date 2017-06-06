@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link href="../week-two-project/css/main.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Film Club</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
@@ -15,9 +15,9 @@
             <img src="../week-two-project/images/filmclub.png" alt="filmclub-logo" id="logo">
          </div>
          <nav>
-            <a href="" id="home">Home</a>
-            <a href="../week-two-project/calendar/calendar.html" id="calendar">Calendar</a>
-            <a href="../week-two-project/join/join.html" id="join">Join</a>
+            <a href="" id="home" class= "active">Home</a>
+            <a href="../calendar/calendar.html" id="calendar">Calendar</a>
+            <a href="../join/join.html" id="join">Join</a>
          </nav>
       </header>
          <h1 id="get-involved">Get Involved</h1>
@@ -39,9 +39,7 @@
          <h1 id="up-next">Up Next</h1>
          <section class="up-next">
             <div class="feature-card">
-               <div class="poster-wrap1">
-                  <img src= "../week-two-project/images/rashomon-poster.jpg" alt="illustrated-rashomon-film-poster">
-               </div>
+               <div class="poster-wrap1"></div>
                <div class="feature-info">
                   <a href="https://www.youtube.com/watch?v=7QTrx3YNz7A&t=8s">Rashomon</a>
                   <p>Film Club: 6/13</p>
@@ -58,49 +56,32 @@
             </div>
             <div class="else-card">
                <div class="film-wrap">
-               <!-- <div class="great-train"> -->
-                  <div class="poster-wrap">
-                     <img src="../week-two-project/images/great-train-poster.jpg">
-                  <!-- </div> -->
-                  </div>
+                  <div class="poster-wrap" id="train"></div>
                   <a href="https://www.youtube.com/watch?v=zuto7qWrplc">The Great Train Robbery</a>
                   <p>Film Club: 6/27</p>
                </div>
                <div class="film-wrap">
-               <!-- <div class="bicycle-thief"> -->
-                  <div class="poster-wrap">
-                     <img src="../week-two-project/images/bicycle-thief-poster.jpg">
-                  </div>
-
+                  <div class="poster-wrap" id="bicycle"></div>
                   <a href=" https://www.youtube.com/watch?v=H3jnzXX9mXs">The Bicycle Thief</a>
                   <p>Film Club: 7/11</p>
-               <!-- </div> -->
                </div>
                <div class="film-wrap">
-               <!-- <div class="nosferatu"> -->
-                  <div class="poster-wrap">
-                     <img src="../week-two-project/images/nosferatu-poster.jpg">
-                  </div>
+                  <div class="poster-wrap" id="nosferatu"></div>
                   <a href="https://www.youtube.com/watch?v=FC6jFoYm3xs">Nosferatu</a>
                   <p>Film Club: 7/25</p>
-               <!-- </div> -->
                </div>
                <div class="film-wrap">
-               <!-- <div class="metropolis"> -->
-                  <div class="poster-wrap">
-                     <img src="../week-two-project/images/metropolis-poster-large.jpg">
-                  </div>
+                  <div class="poster-wrap" id="metropolis"></div>
                   <a href="https://www.youtube.com/watch?v=Q0NzALRJifI">Metropolis</a>
                   <p>Film Club: 8/08</p>
-               <!-- </div> -->
                </div>
             </div>
          </section>
          <footer>
             <nav>
-               <a href="../week-two-project/index.html" class="active" id="home">Home</a>
-               <a href="../week-two-project/calendar/calendar.html" id="calendar">Calendar</a>
-               <a href="../week-two-project/join/join.html" id="join">Join</a>
+               <a href="" class="active" id="home">Home</a>
+               <a href="../calendar/calendar.html" id="calendar">Calendar</a>
+               <a href="../join/join.html" id="join">Join</a>
                <p>© 2017, Film Club</p>
             </nav>
          </footer>
