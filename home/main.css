@@ -186,7 +186,47 @@ li {
    background-color: #E2E2E2;
    padding: 2vw;
    margin: 5vw 0;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
 }
+
+.else-row {
+   width: 90vw;
+   border: solid black 1px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.film-wrap {
+   width: 40vw;
+   /*border: solid black 1px;*/
+}
+
+.poster-wrap {
+   width: 40vw;
+   height: 60vw;
+   /*border: solid black 1px;*/
+}
+
+#train {
+
+}
+
+#bicycle {
+
+}
+
+#nosferatu {
+
+}
+
+#metropolis {
+
+}
+
+
+
 
 .up-next a {
     color: #00D5E7;
