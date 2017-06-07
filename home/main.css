@@ -341,68 +341,39 @@ p {
    width: 31%;
 }
 
-
 .up-next {
-   background-color: #0B1942;
-   width: 100%;
-   display: flex;
-   flex-wrap: wrap;
    justify-content: center;
-   padding-bottom: 5vw;
-   line-height: 1;
 }
 
 .up-next p{
-   font-size: 3vw;
+   font-size: 2.4vw;
 }
 
 #up-next {
-      background-color: #0B1942;
-      color: #FFFFFF;
-      font-weight: lighter;
-      font-size: 8vw;
-      width: 100%;
-      padding: 5vw;
-}
-
-.feature-card {
-   width: 90vw;
-   position: relative;
-   background-color: #E2E2E2;
-   padding: 2vw;
-   display: flex;
-   flex-flow: nowrap row;
-   justify-content: space-between;
-   line-height: 1.5;
+   font-size: 6.5vw;
 }
 
 .feature-card a {
-       color: #00D5E7;
-      font-size: 4vw;
+   font-size: 3.75vw;
 }
 
 .else-card {
    flex-wrap: nowrap;
-   justify-content: center;
 }
 
 .else-row {
-   width: 90vw;
-   height: 75vw;
-   display: flex;
-   justify-content: space-between;
-   /*border: solid black 1px;*/
+   width: 50vw;
+   height: 42vw;
+   justify-content: space-around;
 }
 
 .film-wrap {
-   width: 40vw;
-   /*border: solid black 1px;*/
+   width: 20vw;
 }
 
 .poster-wrap {
-   width: 40vw;
-   height: 60vw;
-   margin-bottom: 1.5vw;
+   width: 20vw;
+   height: 30vw;
 }
 
 .else-card a {
