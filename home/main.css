@@ -76,6 +76,7 @@ nav{
 }
 
 nav a{
+   font-size: 3vw;
    flex-grow: 1;
    color: #FFFFFF;
    text-decoration: none;
@@ -95,7 +96,7 @@ nav a{
 #join {
    background-color: #00D5E7;
 }
-
+/*---------------------------------*/
 
 h2 {
    width: 100%;
@@ -103,6 +104,12 @@ h2 {
    background-color: #0B1942;
    color: #FFFFFF;
    font-weight: lighter;
+   font-size: 5.5vw;
+}
+
+p {
+  font-size: 3.5vw;
+  padding: .5em 0;
 }
 
 .get-involved {
@@ -113,24 +120,21 @@ h2 {
    line-height: 1.5;
 }
 
-.get-involved h1 {
+#get-involved {
    color: #0B1942;
    padding: 3vw 0;
    font-weight: lighter;
    font-size: 8vw;
 }
 
-.get-involved p {
-   font-size: 3.5vw;
-   padding: .5em 0;
-}
-
+/*-------------------------------------------*/
 .up-next {
    background-color: #0B1942;
    width: 100%;
    display: flex;
-   flex-direction: column;
-   padding: 5vw;
+   flex-wrap: wrap;
+   justify-content: center;
+   padding-bottom: 5vw;
 }
 
 #up-next {
@@ -138,6 +142,50 @@ h2 {
       color: #FFFFFF;
       font-weight: lighter;
       font-size: 8vw;
+      width: 100%;
+      padding: 5vw;
+}
+
+.feature-card {
+   width: 90vw;
+   position: relative;
+   background-color: #E2E2E2;
+   padding: 2vw;
+   display: flex;
+   flex-flow: nowrap row;
+   justify-content: space-between;
+}
+
+#rashomon {
+   width: 40vw;
+   height: 60vw;
+   background-image:url("/Users/zoe/Desktop/wk-2-project/images/rashomon-poster.jpg");
+   background-size: cover;
+}
+
+.feature-info {
+   width: 40vw;
+   padding: 1.5vw;
+}
+
+h3 {
+   font-size: 3.5vw;
+   padding-top: 1vw;
+   border-top: solid 1px #0B1942;
+
+}
+
+li {
+   font-size: 3vw;
+   padding-left: 1vw;
+}
+
+.else-card {
+   width: 90vw;
+   position: relative;
+   background-color: #E2E2E2;
+   padding: 2vw;
+   margin: 5vw 0;
 }
 
 .up-next a {
@@ -146,6 +194,7 @@ h2 {
 
 
 footer {
+   position: relative;
    display: flex;
    flex-direction: column;
    text-align: center;
@@ -158,10 +207,13 @@ footer nav a {
 }
 
 footer p {
-   flex-grow: 2;
+   flex-grow: 1.5;
    color: #FFFFFF;
    padding:.5em 0;
-
+   font-size: 3vw;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 
