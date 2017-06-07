@@ -283,11 +283,6 @@ footer p {
 
 /*TABLET__________________________--------------------------------------------------------------------*/
 @media screen and (min-width: 545px) and (max-width: 768px) {
-.body-wrap{
-   width: 100vw;
-   min-height: 100vh;
-   font-size: 100%;
-}
 
 header {
    height: 20vw;
@@ -341,10 +336,6 @@ p {
    width: 31%;
 }
 
-.up-next {
-   justify-content: center;
-}
-
 .up-next p{
    font-size: 2.4vw;
 }
@@ -390,12 +381,12 @@ footer {
 footer nav {
    height: 100%;
    width: 45%;
-   /*border: black solid 1px;*/
 }
 footer a{
    width: 33.3333%;
    height: 100%;
 }
+
 footer p{
    width: 50%;
    height: 100%;
@@ -403,8 +394,93 @@ footer p{
    justify-content: flex-end;
 }
 }
-
 /*DESKTOP_________________________*/
-@media screen and (min-width: 769px) and (max-width: 1400px) {
+@media screen and (min-width: 769px) {
+   header {
+      height: 12vw;
+   }
+
+   #logo {
+      height: 12vw;
+      width: 10vw;
+   }
+
+   nav {
+      flex-direction: row;
+   }
+
+   header a {
+      width: 9vw;
+      height: 12vw;
+      font-size: 120%;
+   }
+
+   h2 {
+      padding: .5vw 1vw;
+      font-size: 3vw;
+   }
+
+   p {
+     font-size: 1.8vw;
+   }
+
+   .get-involved {
+      flex-flow: wrap row;
+      justify-content: space-around;
+      padding: 1.5vw;
+   }
+
+   #get-involved {
+      width: 100vw;
+      padding: .5vw 1vw;
+      font-size: 4.5vw;
+   }
+
+   .watch-container {
+      width: 30%;
+   }
+
+   .takenotes-container {
+      width: 30%;
+   }
+
+   .meetup-container {
+      width: 30%;
+   }
+
+   .up-next p{
+      font-size: 2.4vw;
+   }
+
+   #up-next {
+      font-size: 4.5vw;
+      font-weight: lighter;
+   }
+
+   footer {
+      flex-direction: row;
+      height: 12vw;
+      width: 100vw;
+      font-size: 120%;
+   }
+
+   footer nav {
+      height: 100%;
+      width: 45%;
+   }
+
+   footer a {
+      width: 33.3333%;
+      height: 100%;
+      font-size: 120%;
+   }
+
+   footer p {
+      width: 50%;
+      height: 100%;
+      text-align: right;
+      justify-content: flex-end;
+      font-size: 120%;
+   }
+
 }
-/*background-image:url("../week-two-project/images/filmclub.png");*/
