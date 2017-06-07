@@ -54,8 +54,6 @@ header {
 }
 
 #logo {
-   /*box-sizing: content-box;*/
-
    width: 22vw;
    height: 25vw;
    border: solid 8px #F5005B;
@@ -68,7 +66,8 @@ header {
 }
 
 nav{
-   flex-grow: 3;
+   width: 100%;
+   /*flex-grow: 3;*/
    display: flex;
    flex-direction:column;
    /*max-height: 20vh;*/
@@ -77,7 +76,8 @@ nav{
 
 nav a{
    font-size: 3vw;
-   flex-grow: 1;
+   height: 33.3333%;
+   /*flex-grow: 1;*/
    color: #FFFFFF;
    text-decoration: none;
    display: flex;
@@ -161,6 +161,11 @@ p {
    justify-content: space-between;
 }
 
+.feature-card a {
+       color: #00D5E7;
+      font-size: 4vw;
+}
+
 #rashomon {
    width: 40vw;
    height: 60vw;
@@ -171,11 +176,6 @@ p {
 .feature-info {
    width: 40vw;
    padding: 1.5vw;
-}
-
-.up-next a {
-    color: #00D5E7;
-   font-size: 4vw;
 }
 
 h3 {
@@ -203,6 +203,7 @@ li {
 
 .else-row {
    width: 90vw;
+   height: 75vw;
    display: flex;
    justify-content: space-between;
    /*border: solid black 1px;*/
@@ -216,7 +217,12 @@ li {
 .poster-wrap {
    width: 40vw;
    height: 60vw;
-   /*border: solid black 1px;*/
+   margin-bottom: 1.5vw;
+}
+
+.else-card a {
+    color: #00D5E7;
+   font-size: 3.5vw;
 }
 
 #train {
@@ -243,7 +249,7 @@ li {
    background-size:cover;
 }
 
-
+/*----------------------------------------*/
 footer {
    position: relative;
    display: flex;
@@ -253,7 +259,10 @@ footer {
    background-color: #7DDFE8;
 }
 
-footer nav a {
+footer nav {
+   height: 25vw;
+}
+footer a {
    flex-grow: 1;
 }
 
@@ -273,6 +282,51 @@ footer p {
 
 /*TABLET__________________________*/
 @media screen and (min-width: 545px) and (max-width: 768px) {
+.body-wrap{
+   width: 100vw;
+   min-height: 100vh;
+}
+
+header {
+   height: 20vw;
+   width: 100vw;
+}
+
+#logo {
+   height: 20vw;
+   width: 17vw;
+}
+nav {
+   flex-direction: row;
+   /*width: 45%;*/
+}
+
+header a {
+   width: 17vw;
+   height: 20vw;
+}
+
+footer {
+   flex-direction: row;
+   height: 20vw;
+   width: 100vw;
+}
+
+footer nav {
+   height: 100%;
+   width: 45%;
+   /*border: black solid 1px;*/
+}
+footer a{
+   width: 33.3333%;
+   height: 100%;
+}
+footer p{
+   width: 50%;
+   height: 100%;
+   text-align: right;
+   justify-content: flex-end;
+}
 }
 
 /*DESKTOP_________________________*/
