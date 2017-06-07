@@ -54,7 +54,7 @@ header {
 }
 
 #logo {
-   width: 22vw;
+   width: 23vw;
    height: 25vw;
    border: solid 8px #F5005B;
    background-image: url("../images/filmclub.png");
@@ -159,6 +159,7 @@ p {
    display: flex;
    flex-flow: nowrap row;
    justify-content: space-between;
+   line-height: 1.5;
 }
 
 .feature-card a {
@@ -280,31 +281,134 @@ footer p {
 @media screen and (max-width: 544px) {*/
 
 
-/*TABLET__________________________*/
+/*TABLET__________________________--------------------------------------------------------------------*/
 @media screen and (min-width: 545px) and (max-width: 768px) {
 .body-wrap{
    width: 100vw;
    min-height: 100vh;
+   font-size: 100%;
 }
 
 header {
    height: 20vw;
-   width: 100vw;
 }
 
 #logo {
    height: 20vw;
-   width: 17vw;
+   width: 18vw;
 }
+
 nav {
    flex-direction: row;
-   /*width: 45%;*/
 }
 
 header a {
    width: 17vw;
    height: 20vw;
 }
+
+h2 {
+   padding: .3em;
+   font-size: 3.2vw;
+}
+
+p {
+  font-size: 2.4vw;
+}
+
+.get-involved {
+   flex-flow: wrap row;
+   justify-content: space-around;
+   padding: 3vw;
+   line-height: 1.5;
+}
+
+#get-involved {
+   width: 100vw;
+   padding: 2vw 0;
+   font-size: 6.5vw;
+}
+
+.watch-container {
+   width: 31%;
+}
+
+.takenotes-container {
+   width: 31%;
+}
+
+.meetup-container {
+   width: 31%;
+}
+
+
+.up-next {
+   background-color: #0B1942;
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   padding-bottom: 5vw;
+   line-height: 1;
+}
+
+.up-next p{
+   font-size: 3vw;
+}
+
+#up-next {
+      background-color: #0B1942;
+      color: #FFFFFF;
+      font-weight: lighter;
+      font-size: 8vw;
+      width: 100%;
+      padding: 5vw;
+}
+
+.feature-card {
+   width: 90vw;
+   position: relative;
+   background-color: #E2E2E2;
+   padding: 2vw;
+   display: flex;
+   flex-flow: nowrap row;
+   justify-content: space-between;
+   line-height: 1.5;
+}
+
+.feature-card a {
+       color: #00D5E7;
+      font-size: 4vw;
+}
+
+.else-card {
+   flex-wrap: nowrap;
+   justify-content: center;
+}
+
+.else-row {
+   width: 90vw;
+   height: 75vw;
+   display: flex;
+   justify-content: space-between;
+   /*border: solid black 1px;*/
+}
+
+.film-wrap {
+   width: 40vw;
+   /*border: solid black 1px;*/
+}
+
+.poster-wrap {
+   width: 40vw;
+   height: 60vw;
+   margin-bottom: 1.5vw;
+}
+
+.else-card a {
+   font-size: 2.75vw;
+}
+
 
 footer {
    flex-direction: row;
