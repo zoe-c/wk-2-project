@@ -39,25 +39,26 @@ html {
 
 .body-wrap {
    width: 100vw;
-   height: inherit;
+   min-height: 100vh;
    font-family: 'PT Sans', sans-serif;
    font-weight: lighter;
    font-size: 100%;
 }
 
 header {
-   position: relative;
    display: flex;
    flex-direction: row;
    width: 100%;
+   height: 25vw;
    background-color: #F5005B;
 }
 
 #logo {
    /*box-sizing: content-box;*/
-   flex-grow: 1;
-   /*width: 140px;*/
-   border: solid 15px #F5005B;
+
+   width: 22vw;
+   height: 25vw;
+   border: solid 8px #F5005B;
    background-image: url("../images/filmclub.png");
    background-size: cover;
    background-repeat: no-repeat;
@@ -68,12 +69,14 @@ header {
 
 nav{
    flex-grow: 3;
+   display: flex;
+   flex-direction:column;
    /*max-height: 20vh;*/
    background-color: #7DDFE8;
 }
 
 nav a{
-   padding: 1em;
+   flex-grow: 1;
    color: #FFFFFF;
    text-decoration: none;
    display: flex;
@@ -94,13 +97,70 @@ nav a{
 }
 
 
-footer{
-   background-color: #7DDFE8;
-
+h2 {
+   width: 100%;
+   padding: .4em;
+   background-color: #0B1942;
+   color: #FFFFFF;
+   font-weight: lighter;
 }
 
-footer span{
+.get-involved {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   padding: 5vw;
+   line-height: 1.5;
+}
+
+.get-involved h1 {
+   color: #0B1942;
+   padding: 3vw 0;
+   font-weight: lighter;
+   font-size: 8vw;
+}
+
+.get-involved p {
+   font-size: 3.5vw;
+   padding: .5em 0;
+}
+
+.up-next {
+   background-color: #0B1942;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   padding: 5vw;
+}
+
+#up-next {
+      background-color: #0B1942;
+      color: #FFFFFF;
+      font-weight: lighter;
+      font-size: 8vw;
+}
+
+.up-next a {
+    color: #00D5E7;
+}
+
+
+footer {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   height: 35vw;
+   background-color: #7DDFE8;
+}
+
+footer nav a {
+   flex-grow: 1;
+}
+
+footer p {
+   flex-grow: 2;
    color: #FFFFFF;
+   padding:.5em 0;
 
 }
 
