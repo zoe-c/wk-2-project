@@ -42,26 +42,46 @@ html {
 }
 
 header {
+   position: relative;
    display: flex;
+   flex-direction: row;
+   width: 100vw;
+   height: 12vw;
    background-color: #7DDFE8;
 }
 
 .logo-container {
+   position: relative;
+   width: 11.75vw;
+   height: 12vw;
+   display: flex;
+   justify-content: center;
+   align-items: center;
    background-color: #F5005B;
 }
 
 #logo {
    position: relative;
-   border: solid 1px black;
+   width: 85%;
+   height: 85%;
    background-image: url("../images/filmclub.png");
+   background-position: center;
+   background-size: cover;
 }
 
-nav{
+nav {
+   display: flex;
+   width: 35.25vw;
 }
 
 nav a{
+   width: 33.3333%;
    color: #FFFFFF;
    text-decoration: none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 2vw;
 }
 
 #home {
@@ -136,7 +156,7 @@ h2 {
    color: #FFFFFF;
    background-color: #0B1942;
    border-radius: 1px;
-   font-size: 2vw;
+   font-size: 1.5vw;
 }
 
 #filler {
