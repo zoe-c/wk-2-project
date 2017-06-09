@@ -35,7 +35,7 @@ html {
 
 .body-wrap {
   width: 100vw;
-  min-height: 100vh;
+  height: 100vh;
   font-family: 'PT Sans', sans-serif;
   font-weight: lighter;
   font-size: 100%;
@@ -73,8 +73,8 @@ nav {
    display: flex;
    width: 35.25vw;
 }
-
 nav a{
+   cursor: pointer;
    width: 33.3333%;
    color: #FFFFFF;
    text-decoration: none;
@@ -82,6 +82,11 @@ nav a{
    justify-content: center;
    align-items: center;
    font-size: 2vw;
+}
+nav a:hover{
+   border-bottom: 3px solid #FFFFFF;
+   text-shadow: 1px 1px 2px grey;
+   /*transform-style: preserve-3d;*/
 }
 
 #home {
@@ -98,13 +103,17 @@ nav a{
 /*---------------------------------*/
 
 h1 {
-   border: solid black 1px;
+   font-size: 4.5vw;
+   font-weight: lighter;
+   padding: 2vw;
    color: #0B1942;
    background-color: #FFFFFF;
 }
 
 h2 {
-   border: solid black 1px;
+   font-size: 3.5vw;
+   padding: 1.5vw 2vw;
+   font-weight: lighter;
    color: #FFFFFF;
    background-color: #0B1942;
 }
@@ -119,6 +128,8 @@ h2 {
    display: flex;
    justify-content: center;
    align-items: center;
+   background-color: #0B1942;
+   border-bottom: 5vw #0B1942;
 }
 
 
@@ -163,22 +174,25 @@ h2 {
   background-color: transparent;
 }
 
-
-
-
-/**/
 footer {
+   position: relative;
    display: flex;
+   flex-direction: row;
+   width: 100vw;
+   height: 12vw;
    background-color: #7DDFE8;
 }
 
-footer nav {
-   border: solid black 1px;
-}
-
 footer span{
+   position: relative;
+   flex-grow: 1;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   padding: 2vw;
+   font-size: 2vw;
    color: #FFFFFF;
-   border: solid black 1px;
+
 }
 
 
