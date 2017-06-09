@@ -41,6 +41,11 @@ html {
   font-size: 100%;
 }
 
+form {
+   width: 100vw;
+   display: flex;
+
+}
 header {
    position: relative;
    display: flex;
@@ -73,6 +78,7 @@ nav {
    display: flex;
    width: 35.25vw;
 }
+
 nav a{
    cursor: pointer;
    width: 33.3333%;
@@ -83,6 +89,7 @@ nav a{
    align-items: center;
    font-size: 2vw;
 }
+
 nav a:hover{
    border-bottom: 3px solid #FFFFFF;
    text-shadow: 1px 1px 2px grey;
