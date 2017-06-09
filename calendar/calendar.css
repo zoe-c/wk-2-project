@@ -30,12 +30,13 @@ colors-------------------------------*/
 
 html {
   min-height: 100vh;
+  height: 100%;
   width: 100vw;
 }
 
 .body-wrap {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   font-family: 'PT Sans', sans-serif;
   font-weight: lighter;
   font-size: 100%;
@@ -62,7 +63,7 @@ header {
 
 #logo {
    position: relative;
-   width: 85%;
+   width: 79%;
    height: 85%;
    background-image: url("../images/filmclub.png");
    background-position: center;
@@ -106,13 +107,14 @@ h1 {
    font-size: 4.5vw;
    font-weight: lighter;
    padding: 2vw;
+   box-shadow: 2px 2px 5px black;
    color: #0B1942;
    background-color: #FFFFFF;
 }
 
 h2 {
-   font-size: 3.5vw;
-   padding: 1.5vw 2vw;
+   font-size: 3.75vw;
+   padding: 1.5vw 2vw 0 2vw;
    font-weight: lighter;
    color: #FFFFFF;
    background-color: #0B1942;
@@ -124,12 +126,11 @@ h2 {
 }
 .container {
    width: 100vw;
-   height: 75vw;
+   height: 80vw;
    display: flex;
    justify-content: center;
    align-items: center;
    background-color: #0B1942;
-   border-bottom: 5vw #0B1942;
 }
 
 
@@ -183,7 +184,7 @@ footer {
    background-color: #7DDFE8;
 }
 
-footer span{
+footer span {
    position: relative;
    flex-grow: 1;
    display: flex;
@@ -203,12 +204,66 @@ footer span{
 /*MOBILE___________________________*/
 @media screen and (max-width: 544px) {
    .body-wrap {
-      height: 165vh;
+      width: 100vw;
+      height: 120vh;
+   }
+
+   header {
+      height: 15vh;
+      background-color: #7DDFE8;
+   }
+   .logo-container {
+      width: 15.25vh;
+      height: auto;
+   }
+
+
+   nav {
+      width: 80.42vw;
+      height: 100%;
+      flex-direction: column;
+   }
+
+
+   nav a{
+      cursor: pointer;
       width: 100%;
+      height: 100%;
+      color: #FFFFFF;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2vw;
+   }
+   nav a:hover{
+      border-bottom: 3px solid #FFFFFF;
+      text-shadow: 1px 1px 2px grey;
+      /*transform-style: preserve-3d;*/
    }
 
 
 
+}
+
+footer {
+   flex-wrap: wrap;
+   height: 25vh;
+   min-height: fill-available;
+   background-color: #7DDFE8;
+}
+
+footer nav{
+   display: flex;
+   flex-direction: column;
+   width: 100vw;
+   height: 15vh;
+}
+
+footer span {
+   justify-content: center;
+   width: 100vw;
+   height: 10vh;
 
 }
 
