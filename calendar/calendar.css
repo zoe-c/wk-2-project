@@ -202,75 +202,131 @@ footer span {
 
 
 /*MOBILE___________________________*/
+/*NEED TO MAKE A MEDIA QUERY WHERE JS STEPS IN AND PRINTS A BIG, BOLD, "NO" if anyone tries to
+collapse their window to less than 300px, IMEANREALLY */
 @media screen and (max-width: 544px) {
    .body-wrap {
       width: 100vw;
-      height: 120vh;
    }
 
    header {
       height: 15vh;
-      background-color: #7DDFE8;
    }
+
    .logo-container {
       width: 15.25vh;
       height: auto;
    }
 
-
    nav {
       width: 80.42vw;
-      height: 100%;
+      height: auto;
       flex-direction: column;
    }
 
-
-   nav a{
-      cursor: pointer;
+   nav a {
       width: 100%;
       height: 100%;
-      color: #FFFFFF;
-      text-decoration: none;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 2vw;
+      font-size: 2vh;
    }
-   nav a:hover{
-      border-bottom: 3px solid #FFFFFF;
+
+   nav a:hover {
+      border-bottom: 1px solid #FFFFFF;
       text-shadow: 1px 1px 2px grey;
       /*transform-style: preserve-3d;*/
    }
 
+   h1 {
+      font-size: 7vw;
+      font-weight: lighter;
+      padding: 5.5vw;
+   }
+
+   h2 {
+      font-size: 6vw;
+      padding: 4vh 4vw 4vw 5.5vw;
+   }
+
+   .label {
+      width: 40%;
+      height: 40%;
+      padding:2%;
+      font-size: 2.5vw;
+   }
+
+   .container {
+      height: 85vw;
+   }
 
 
-}
 
-footer {
-   flex-wrap: wrap;
-   height: 25vh;
-   min-height: fill-available;
-   background-color: #7DDFE8;
-}
 
-footer nav{
-   display: flex;
-   flex-direction: column;
-   width: 100vw;
-   height: 15vh;
-}
+   footer {
+      flex-wrap: wrap;
+      height: 25vh;
+      /*min-height: fill-available;*/
+      background-color: #7DDFE8;
+   }
 
-footer span {
-   justify-content: center;
-   width: 100vw;
-   height: 10vh;
+   footer nav{
+      display: flex;
+      flex-direction: column;
+      width: 100vw;
+      height: 15vh;
+   }
+
+   footer span {
+      justify-content: center;
+      width: 100vw;
+      height: 10vh;
+      font-size: 1.75vh;
+   }
 
 }
 
 /*TABLET__________________________*/
-@media screen and (min-width: 545px) {
+@media screen and (min-width: 545px) and (max-width: 769px) {
+   header {
+      height: 15vh;
+   }
+
+   .logo-container {
+      width: 15.25vh;
+      height: auto;
+   }
+
+   nav {
+      width: 45.5vh;
+
+   }
+
+   nav a {
+      width: 100%;
+      height: 100%;
+      font-size: 2vh;
+   }
+
+   h1 {
+      font-size: 5.5vw;
+      font-weight: lighter;
+      padding: 3vw 5vw;
+   }
+
+   h2 {
+      font-size: 4.7vw;
+      padding: 4vh 4vw 4vw 5.5vw;
+   }
+
+   .label {
+      font-size: 1.75vw;
+
+   }
+
+   footer {
+      height: 15vh;
+}
 }
 
 /*DESKTOP_________________________*/
-@media screen and (min-width: 769px) and (max-width: 1400px) {
-}
+/*@media screen and (min-width: 769px) and (max-width: 1400px) {
+}*/
