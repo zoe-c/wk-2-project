@@ -10,25 +10,99 @@
   <body>
    <section class="body-wrap">
       <header>
-         <div class="logo-container">
-            <div id="logo"></div>
-         </div>
-         <nav>
-            <a href="../home/index.html" id="home" class= "active">Home</a>
-            <a href="../calendar/calendar.html" id="calendar">Calendar</a>
-            <a href="" id="join">Join</a>
-         </nav>
+            <div class="logo-container">
+               <div id="logo"></div>
+            </div>
+            <nav>
+               <a href="../home/index.html" id="home" class= "active">Home</a>
+               <a href="../calendar/calendar.html" id="calendar">Calendar</a>
+               <a href="" id="join">Join</a>
+            </nav>
       </header>
+      <h1>Join Film Club</h1>
+      <form action="get-user-profile-info.php" method="POST">
+      <div class="choose-pic">
+             <label for="file">profile picture</label>
+             <input type="file" id="file">
+             <div class="shadow-img"></div>
+      </div>
 
+      <div class="user-info">
+           <div class="left-info">
+              <label for="name">name</label>
+              <input type="text" id="name">
+              <label for="password">password</label>
+              <input type="password" id="password">
+           </div>
+           <div class="right-info">
+              <label for="email">email</label>
+              <input type="text" id="email">
+              <label for="confirm-password">confirm-password</label>
+              <input type="password" id="confirm-password">
+           </div>
+      </div>
 
-
+      <div class="checkbox-interests">
+         <p>Which genres are you interested in? </p>
+            <label for="checkbox" >
+            <input type="checkbox" id="checkbox" value="action">
+               action
+            </label>
+            <label for="checkbox" >
+            <input type="checkbox" id="checkbox" value="drama">
+               drama
+            </label>
+            <label for="checkbox" >
+            <input type="checkbox" id="checkbox" value="horror">
+               horror
+            </label>
+            <label for="checkbox" >
+            <input type="checkbox" id="checkbox" value="science-fiction">
+               science fiction
+            </label>
+            <label for="checkbox" >
+            <input type="checkbox" id="checkbox" value="adventure">
+               adventure
+            </label>
+            <label for="checkbox" >
+            <input type="checkbox" id="checkbox" value="fantasy">
+               fantasy
+            </label>
+            <label for="checkbox" >
+            <input type="checkbox" id="checkbox" value="mystery">
+               mystery
+            </label>
+            <label for="checkbox" >
+            <input type="checkbox" id="checkbox" value="western">
+               western
+            </label>
+            <label for="checkbox" >
+            <input type="checkbox" id="checkbox" value="comedy">
+               comedy
+            </label>
+            <label for="checkbox" >
+            <input type="checkbox" id="checkbox" value="historical">
+               historical
+            </label>
+            <label for="checkbox" >
+            <input type="checkbox" id="checkbox" value="romance">
+               romance
+            </label>
+      </div>
+         <div class="additionalInput">
+         <p>Additional input</p>
+         <textarea name="textarea" rows="2" cols="50">(or just shut up and watch tha flix)</textarea>
+        </div>
+       <button type="submit" form="form1" value="join-film-club">Join Film Club</button>
+      </form>
       <footer>
          <nav>
             <a href="../home/index.html" id="home">Home</a>
             <a href="../calendar/calendar.html" id="calendar">Calendar</a>
             <a href="" class="active" id="join">Join</a>
-            <p>© 2017, Film Club</p>
+            <span>© 2017, Film Club</span>
          </nav>
       </footer>
-      </body>
-      </html>
+   </section>
+  </body>
+</html>

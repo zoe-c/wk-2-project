@@ -16,3 +16,234 @@ button background: #F5005B
 copyright text: #FFFFFF
 
 colors-------------------------------*/
+
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  /*outline: 0;*/
+  font-size: 100%;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.body-wrap {
+  width: 100vw;
+  min-height: 100vh;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: lighter;
+  font-size: 100%;
+}
+
+header {
+   position: relative;
+   display: flex;
+   flex-direction: row;
+   width: 100vw;
+   height: 12vw;
+   background-color: #7DDFE8;
+}
+
+.logo-container {
+   position: relative;
+   width: 11.75vw;
+   height: 12vw;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #F5005B;
+}
+
+#logo {
+   position: relative;
+   width: 79%;
+   height: 85%;
+   background-image: url("../images/filmclub.png");
+   background-position: center;
+   background-size: cover;
+}
+
+nav {
+   display: flex;
+   width: 35.25vw;
+}
+nav a{
+   cursor: pointer;
+   width: 33.3333%;
+   color: #FFFFFF;
+   text-decoration: none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 2vw;
+}
+nav a:hover{
+   border-bottom: 3px solid #FFFFFF;
+   text-shadow: 1px 1px 2px grey;
+   /*transform-style: preserve-3d;*/
+}
+
+#home {
+   background-color: #00A5BF;
+}
+
+#calendar {
+   background-color: #00B7D3;
+}
+
+#join {
+   background-color: #00D5E7;
+}
+/*---------------------------------*/
+
+form {
+   width: 100vw;
+   height: 76vw;
+   display: flex;
+   flex-flow: wrap row;
+   justify-content: space around;
+}
+
+.shadow-img {
+   width: 50vw;
+   height: 50vw;
+   background-image: url("../images/profile-placeholder.png");
+   background-position: center;
+   background-size: cover;
+   border-radius: 150vw;
+}
+
+
+h1 {
+   font-size: 4.5vw;
+   font-weight: lighter;
+   padding: 2vw;
+   box-shadow: 1px 1px 3px grey;
+   color: #0B1942;
+   background-color: #FFFFFF;
+}
+
+
+
+
+footer {
+   position: relative;
+   display: flex;
+   flex-direction: row;
+   width: 100vw;
+   height: 12vw;
+   background-color: #7DDFE8;
+}
+
+footer span {
+   position: relative;
+   flex-grow: 1;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   padding: 2vw;
+   font-size: 2vw;
+   color: #FFFFFF;
+
+}
+
+
+
+
+
+
+/*MOBILE___________________________*/
+/*NEED TO MAKE A MEDIA QUERY WHERE JS STEPS IN AND PRINTS A BIG, BOLD, "NO" if anyone tries to
+collapse their window to less than 300px, IMEANREALLY */
+@media screen and (max-width: 544px) {
+   .body-wrap {
+      width: 100vw;
+   }
+
+   header {
+      height: 15vh;
+   }
+
+   .logo-container {
+      width: 15.25vh;
+      height: auto;
+   }
+
+   nav {
+      width: 80.42vw;
+      height: auto;
+      flex-direction: column;
+   }
+
+   nav a {
+      width: 100%;
+      height: 100%;
+      font-size: 2vh;
+   }
+
+   nav a:hover {
+      border-bottom: 1px solid #FFFFFF;
+      text-shadow: 1px 1px 2px grey;
+      /*transform-style: preserve-3d;*/
+   }
+
+
+
+
+
+
+   footer {
+      flex-wrap: wrap;
+      height: 25vh;
+      /*min-height: fill-available;*/
+      background-color: #7DDFE8;
+   }
+
+   footer nav{
+      display: flex;
+      flex-direction: column;
+      width: 100vw;
+      height: 15vh;
+   }
+
+   footer span {
+      justify-content: center;
+      width: 100vw;
+      height: 10vh;
+      font-size: 1.75vh;
+   }
+
+}
+
+/*TABLET__________________________*/
+@media screen and (min-width: 545px) and (max-width: 769px) {
+   header {
+      height: 15vh;
+   }
+
+   .logo-container {
+      width: 15.25vh;
+      height: auto;
+   }
+
+   nav {
+      width: 45.5vh;
+
+   }
+
+   nav a {
+      width: 100%;
+      height: 100%;
+      font-size: 2vh;
+   }
+
+   footer {
+      height: 15vh;
+   }
+}
